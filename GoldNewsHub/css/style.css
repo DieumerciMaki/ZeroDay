@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f4d03f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #f4d03f;
+}
+
+h1 { margin: 0; font-size: 2.5em; }
+
+.sidebar {
+    float: left;
+    width: 200px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+
+.sidebar ul { list-style: none; padding: 0;}
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin:0.5rem 0;
+    padding: 0.5rem;
+    background: #f4d03f;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.sidebar button:hover { background: #e6b800}
+
+main {
+    margin-left: 220px;
+    padding: 2rem;
+}
+
+#news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.news-card { /*NEWS A VENIR*/
+    background: rgba(225, 255, 225, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #f4d03f;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .sidebar { width: 100%; height: auto; float: none; }
+    main { margin-left: 0; }
+}
